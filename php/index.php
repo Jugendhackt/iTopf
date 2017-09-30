@@ -22,17 +22,20 @@
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-
-    $sql = "SELECT data FROM data where function = 'water' order by time limit 1";
-
+//Wasser
+    $sql = "SELECT data FROM data where function = 'water' order by id desc limit 1";
     $result = $conn->query($sql);
-    var_dump($result);
+    $row=mysqli_fetch_row($result);
+    $water=$row[0];
+//Licht
+    $sql = "SELECT data FROM data where function = 'light' order by id desc limit 1";
+    $result = $conn->query($sql);
+    $row=mysqli_fetch_row($result);
+    $light=$row[0];
 
     ?>
 
-
     <table class="tg">
-
       <tr>
         <th>Wärme</th>
         <th>Feuchtigkeit</th>
@@ -41,8 +44,8 @@
 
       <tr>
         <td></td>
-        <td></td>
-        <td></td>
+        <td> <?php echo($water); ?> </td>
+        <td> <?php echo($light); ?></td>
       </tr>
     </table>
 
