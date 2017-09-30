@@ -1,0 +1,54 @@
+body {
+  background-image: url("pflanze.jpg");
+}
+
+
+h1{
+   font-size: 70px;
+   color: #ffffff;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #000000;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+margin-top: 80px;
+}
+.footer{
+position: absolute;
+bottom:0 ;
+text-align: center;
+width: 100%;
+color: white;
+font-family:Arial, sans-serif;
+font-weight: lighter;
+text-decoration: none;
+}
+.tg  {
+  background: RGBA(255,255,255,0.6);
+  border-collapse:collapse;
+  border-spacing:0;}
+
+.tg td{
+  font-family:Arial, sans-serif;
+  font-size:40px;
+  padding:40px 40px;
+  border-style:solid;
+  border-width:7px;
+  overflow:hidden;
+  word-break:normal;}
+
+.tg th{
+  font-family:Arial, sans-serif;
+  font-size:40px;
+  font-weight:normal;
+  padding:40px 40px;
+  border-style:solid;
+  border-width:7px;
+  overflow:hidden;
+  word-break:normal;}
